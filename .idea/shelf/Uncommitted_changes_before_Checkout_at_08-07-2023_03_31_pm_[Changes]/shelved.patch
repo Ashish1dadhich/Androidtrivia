@@ -1,0 +1,17 @@
+Index: app/src/main/java/com/example/android/navigation/GameFragment.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/android/navigation/GameFragment.kt b/app/src/main/java/com/example/android/navigation/GameFragment.kt
+--- a/app/src/main/java/com/example/android/navigation/GameFragment.kt	
++++ b/app/src/main/java/com/example/android/navigation/GameFragment.kt	
+@@ -88,7 +88,7 @@
+                     }
+                 } else {
+                     // Game over! A wrong answer sends us to the gameOverFragment.
+-                    view.findNavController().navigate(GameFragmentDirections.actionGameFragmentToGameOverFragment2())
++                    view.findNavController().navigate(GameFragmentDirections.actionGameFragmentToGameWonFragment(numQuestions,questionIndex))
+                 }
+             }
+         }

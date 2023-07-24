@@ -1,0 +1,17 @@
+Index: app/src/main/java/com/example/android/navigation/GameWonFragment.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/android/navigation/GameWonFragment.kt b/app/src/main/java/com/example/android/navigation/GameWonFragment.kt
+--- a/app/src/main/java/com/example/android/navigation/GameWonFragment.kt	
++++ b/app/src/main/java/com/example/android/navigation/GameWonFragment.kt	
+@@ -44,7 +44,7 @@
+                 inflater, R.layout.fragment_game_won, container, false)
+         binding.nextMatchButton.setOnClickListener { view: View ->
+             view.findNavController().navigate(
+-                    GameWonFragmentDirections.actionGameWonFragmentToGameFragment())
++                 GameWonFragmentDirections.actionGameWonFragmentToGameFragment())
+         }
+         setHasOptionsMenu(true)
+         return binding.root

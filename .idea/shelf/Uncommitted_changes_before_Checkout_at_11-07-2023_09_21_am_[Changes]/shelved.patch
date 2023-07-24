@@ -1,0 +1,57 @@
+Index: app/src/main/java/com/example/android/navigation/MainActivity.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/android/navigation/MainActivity.kt b/app/src/main/java/com/example/android/navigation/MainActivity.kt
+--- a/app/src/main/java/com/example/android/navigation/MainActivity.kt	
++++ b/app/src/main/java/com/example/android/navigation/MainActivity.kt	
+@@ -20,7 +20,7 @@
+     override fun onCreate(savedInstanceState: Bundle?) {
+         super.onCreate(savedInstanceState)
+         @Suppress("UNUSED_VARIABLE")
+-        val binding = DataBindingUtil.setContentView<ActivityMainBinding>(this, R.layout.activity_main)
++         val binding = DataBindingUtil.setContentView<ActivityMainBinding>(this, R.layout.activity_main)
+         drawerLayout =binding.drawerLayout
+         val navController =this .findNavController(R.id.myNavHostFragment)
+         NavigationUI.setupActionBarWithNavController(this, navController,drawerLayout)
+Index: app/src/main/res/layout/activity_main.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_main.xml b/app/src/main/res/layout/activity_main.xml
+--- a/app/src/main/res/layout/activity_main.xml	
++++ b/app/src/main/res/layout/activity_main.xml	
+@@ -10,20 +10,22 @@
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical">
+-        <fragment
++          <fragment
+             android:id="@+id/myNavHostFragment"
+             android:name="androidx.navigation.fragment.NavHostFragment"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             app:defaultNavHost="true"
+-            app:navGraph="@navigation/navigation"
+-            />
++            app:navGraph="@navigation/navigation" />
+         </LinearLayout>
+-            <com.google.android.material.navigation.NavigationView
+-                android:id="@+id/navView"
+-                android:layout_width="wrap_content"
+-                android:layout_height="wrap_content"
+-                android:layout_gravity="start"
+-                app:menu="@menu/navdrawer_menu"/>
++        <com.google.android.material.navigation.NavigationView
++            android:id="@+id/navView"
++            android:layout_width="wrap_content"
++            android:layout_height="wrap_content"
++            android:layout_gravity="start"
++            app:menu="@menu/navdrawer_menu"
++            app:headerLayout="@layout/nav_header"/>
++
+     </androidx.drawerlayout.widget.DrawerLayout>
++
+ </layout>

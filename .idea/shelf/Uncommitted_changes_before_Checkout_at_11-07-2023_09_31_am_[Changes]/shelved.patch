@@ -1,0 +1,19 @@
+Index: .idea/navEditor.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/navEditor.xml b/.idea/navEditor.xml
+--- a/.idea/navEditor.xml	
++++ b/.idea/navEditor.xml	
+@@ -51,8 +51,8 @@
+                       <LayoutPositions>
+                         <option name="myPosition">
+                           <Point>
+-                            <option name="x" value="373" />
+-                            <option name="y" value="-135" />
++                            <option name="x" value="386" />
++                            <option name="y" value="-133" />
+                           </Point>
+                         </option>
+                         <option name="myPositions">
